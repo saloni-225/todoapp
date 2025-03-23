@@ -21,6 +21,11 @@ public class LoginController {
 	public String getLogin() {
 		return "login";
 	}
+//	@RequestMapping("/")
+//	public String showWelcomePage() {
+//		
+//		return "welcome";
+//	}
 	
 	@RequestMapping(value="login",method=RequestMethod.POST)
 	public String getWelcome(@RequestParam String name,@RequestParam String password,ModelMap model) {
